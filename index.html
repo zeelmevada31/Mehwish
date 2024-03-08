@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehwish</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #f7d7f7; /* Customize the background color */
+            overflow: hidden;
+        }
+
+        #hello-text {
+            text-align: center;
+            font-family: cursive; /* Customize the font family */
+            font-size: 36px; /* Customize the font size */
+            color: #452d52; /* Customize the font color */
+            margin-top: 20px; /* Adjust the spacing between image and text */
+        }
+
+        #friend-image {
+            max-width: 100%;
+            height: auto; /* Optional: Round the corners of the image */
+        }
+        #container {
+      display: none;    
+            opacity: 0;
+      flex-direction: row;
+      align-items: center;
+      padding: 20px;
+      margin: 20px;
+      background-image: url(bg1.jpg); /* Transparent white background */
+      background-size: cover;
+      background-repeat: no-repeat;
+      border: 2px solid rgba(0, 0, 0, 0.2); /* Transparent black border */
+      border-radius: 10px;
+      max-width: 80%; /* Adjust the maximum width of the container */
+      transition: 1s;
+      animation: popup 1.5s ease-in-out;
+    }
+
+
+    @media (max-width: 768px) {
+
+      #container {
+        flex-direction: column;
+      }
+
+    }
+    
+    .home{
+        opacity: 1;
+        transition: 1s;
+    }
+    @keyframes popup {
+    0% {
+        transform: scale(0);  /* Start with no scale (hidden) */
+        opacity: 0;           /* Start with opacity 0 */
+    }
+    50% {
+        transform: scale(1.1); /* Scale to 110% halfway through the animation */
+        opacity: 1;            /* Fade in */
+    }
+    100% {
+        transform: scale(1);   /* Return to normal scale (100%) */
+        opacity: 1;            /* Maintain full opacity */
+    }
+}
+    </style>
+</head>
+
+<body>
+    <div class="home" id="home">
+    <img id="friend-image" src="Swinging.gif" alt="Friend Image"> <!-- Replace with your image path -->
+
+    <div id="hello-text">Hello!</div>
+
+    </div>
+
+        <div id="container" id="para">
+            <div id="animated-paragraph">
+              <p>
+                <!-- Your paragraph content here -->
+                Meko ni pata kya karte tareef me par ab itna jyadamehnat kiya ye banane me fir teko ye dekhna hi padega,   chahe mood ho yaa naa ho or tu ni dekhi fir teri kher ni ,     ab chup chaap dekh, teri tareef shuru hoti h yaha se.......   Yrr tu itni acchi hai me explain ni kar sakta , sabko pehle nature dikhta hai isaan me par meko jo sabse achhi baat tere me pasand aayi wo ye hai ki yrr tu kesi bhi situation ho kesa bhi mood ho tu fir bhi apni trf se apna naa dekh ke saamne waale ka dekhti or yrr rahi baat nature ki yrr tere nature ke baare me kya hi bolo me tera nature sbse achha hai you are the best✨, Or me yrr allah ka jitna bhi sukr karu kam hai ki muje tere jesi dost di 🥹, Teko pata teri tareef karte time mere words kam pad jaate meri yrr sab sochne ki limit se beyond chala jata sb kese bataaaaooooo yrrrr 🥹, Or teko yrr sach batu har ek chiz malum hai jese ki kisi ka mood khrb ho toh kese tu manayegi usko, agr teri wjha se koi naraz hai toh tu use ese baat karti jese wo insaan sb bhul jata ki koi chiz thi jisse mood khrb bhi hua tha, As a friend bahot saari chize hai yrr tere me , me allah se dua karta har roz ki tuje kabhi bhi dukh naa ho tuje hamesha khushi mile tere chehre par hamesha smile rahe, Like sach me i don't have words to explain how great you are, you are just like that one rare piece of diamond which can be found in coal mine ( tere samjh naa aave toh bata du you are in 1 out of infinity people) finding friend like you is the best moment of my life and i can't explain how i feel your company as a friend, sach me tere jesa koi nai mehwish , mene bahot dost banaye par tere jesa jindagi me naa mila itna achhaa dost, yrr bahut naseeb waalo ko milta hai tere jesa koi dost, tu sab se best hai yrr 😌.
+                <!-- Continue your paragraph -->
+              </p>
+          </div>
+    </div>
+
+    <script>
+
+setTimeout(function () {
+            document.getElementById('home').style.display = 'none';
+             document.getElementById('container').style.display = 'flex';
+             document.getElementById('container').style.opacity = '1';
+        }, 5000);
+
+    </script>
+</body>
+
+</html>
